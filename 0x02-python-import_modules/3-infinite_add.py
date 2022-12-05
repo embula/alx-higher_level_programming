@@ -3,10 +3,12 @@
 # embula
 
 if __name__ == "__main__":
-    """Print the addition of all arguments."""
     import sys
-
-    total = 0
-    for i in range(len(sys.argv) - 1):
-        total += int(sys.argv[i + 1])
-    print("{}".format(total))
+    num = len(sys.argv)
+    sum = 0
+    if num > 1:
+        for i in range(1, num):
+            sum += int(sys.argv[i])
+        print("{}".format(sum))
+    else:
+        print("{}".format(sum))
